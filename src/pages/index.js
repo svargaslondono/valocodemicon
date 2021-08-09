@@ -7,6 +7,7 @@ const pageStyles = {
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
 const headingStyles = {
+  fontFamily: "Harry Potter",
   marginTop: 0,
   marginBottom: 64,
   maxWidth: 320,
