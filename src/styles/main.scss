@@ -1,4 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
 @font-face {
   font-family: "Harry Potter";
   src: url("../fonts/HarryPotter-ov4z.ttf");
+}
+
+#___gatsby,
+#gatsby-focus-wrapper,
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #eee;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Harry Potter";
+}
+
+p,
+div {
+  font-family: "Neucha";
 }
