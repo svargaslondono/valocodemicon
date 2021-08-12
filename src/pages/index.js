@@ -1,32 +1,7 @@
 import * as React from "react"
 import { graphql } from "gatsby"
 import Concept from "../components/concept"
-
-const pageStyle = {
-  alignItems: "center",
-  backgroundColor: "#121212",
-  display: "flex",
-  flexDirection: "column",
-  height: "100%",
-  justifyContent: "center"
-}
-
-const titleStyle = {
-  color: "white",
-  fontSize: "48px",
-  letterSpacing: "1px"
-}
-
-const latestListStyle = {
-  display: "flex",
-  justifyContent: "center",
-  margin: "48px -20px 0",
-  textAlign: "center"
-}
-
-const conceptStyle = {
-  margin: "0 20px"
-}
+import "../styles/home.scss"
 
 const IndexPage = ({
   data: {
@@ -34,19 +9,17 @@ const IndexPage = ({
   }
 }) => {
   return (
-    <main style={pageStyle}>
+    <main className="home">
       <title>Home Page</title>
-      <h1 style={titleStyle}>
+      <h1 className="home__title">
         Valocodemicon
       </h1>
       <p>
         A knowledge compendium for web development. An interview preparation tool. Updated weekly!
       </p>
-      <div style={latestListStyle}>
-        {nodes.map(item =>
-          <div style={conceptStyle}>
-            <Concept info={item}/>
-          </div>
+      <div className="home__latest">
+        {nodes.map((item, index) =>
+          <Concept key={index} info={item} customClasses="home__concept"/>
         )}
       </div>
     </main>

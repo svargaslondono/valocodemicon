@@ -1,29 +1,16 @@
 import * as React from "react"
+import "../styles/concept.scss"
 
-const containerStyle = {
-  backgroundColor: "rgba(255, 255, 255, .05)",
-  borderRadius: "5px",
-  color: "white",
-  padding: "20px"
-}
-
-const titleStyle = {
-  fontFamily: "Harry Potter"
-}
-
-const contentStyle = {
-  marginTop: "16px"
-}
-
-const IndexPage = ({
-  info
+const Concept = ({
+  info,
+  customClasses
 }) => {
   return (
-    <div style={containerStyle}>
-      <h2 style={titleStyle}>{info.name}</h2>
-      <p style={contentStyle}>{info.shortDescription}</p>
+    <div className={"concept" + (customClasses ? ' ' + customClasses : '')}>
+      <h2 className="concept__title">{info.name}</h2>
+      <p className="concept__content">{info.shortDescription}</p>
     </div>
   )
 }
 
-export default IndexPage
+export default Concept
