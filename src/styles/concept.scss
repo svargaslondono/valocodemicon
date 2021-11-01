@@ -6,7 +6,7 @@
   transition: transform .3s ease-in-out;
 
   &__title {
-    font-family: "Harry Potter";
+    font-family: "DM Serif Display";
   }
 
   &__content {
@@ -14,7 +14,6 @@
   }
 
   &:hover {
-    background-color: rgba(255, 255, 255, .07);
     transform: scale(1.1);
   }
 }

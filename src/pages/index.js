@@ -1,6 +1,9 @@
 import * as React from "react"
 import { graphql } from "gatsby"
 import Concept from "../components/concept"
+import Header from "../components/header"
+import "@fontsource/dm-serif-display"
+import "@fontsource/maven-pro"
 import "../styles/home.scss"
 
 const IndexPage = ({
@@ -11,13 +14,11 @@ const IndexPage = ({
   return (
     <main className="home">
       <title>Home Page</title>
-      <h1 className="home__title">
-        Valocodemicon
-      </h1>
+      <Header/>
       <p>
-        A knowledge compendium for web development. An interview preparation tool. Updated weekly!
+        A knowledge compendium for web development. An interview preparation tool.
       </p>
-      <div className="home__latest">
+      <div className="home__content">
         {nodes.map((item, index) =>
           <Concept key={index} info={item} customClasses="home__concept"/>
         )}

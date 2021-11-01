@@ -1,0 +1,14 @@
+.header {
+  border-bottom: 1px solid #333;
+  padding: 10px 0;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+
+  &__title {
+    font-family: 'Fredericka the Great';
+    font-size: 32px;
+    font-weight: 400;
+  }
+}
