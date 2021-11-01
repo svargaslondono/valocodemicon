@@ -4,8 +4,8 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "My Gatsby Site",
+    siteUrl: "https://valocodemicon.gatsbyjs.io/",
+    title: "valocodemicon",
   },
   plugins: [
     {
@@ -37,6 +37,19 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "valocodemicon",
+        short_name: "valocodemicon",
+        start_url: "/",
+        background_color: "#eee",
+        theme_color: "#eee",
+        display: "standalone",
+        icon: "src/images/icon.png",
+        crossOrigin: `use-credentials`,
+      },
     },
   ],
 };

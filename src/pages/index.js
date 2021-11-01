@@ -13,7 +13,7 @@ const IndexPage = ({
 }) => {
   return (
     <main className="home">
-      <title>Home Page</title>
+      <title>valocodemicon</title>
       <Header/>
       <p>
         A knowledge compendium for web development. An interview preparation tool.
